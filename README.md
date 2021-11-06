@@ -1,1 +1,2 @@
-# ga_in_semiconductor_industry
+# Generative Appropriability in the US Semiconductor Industry
+
