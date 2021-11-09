@@ -1,0 +1,344 @@
+TESTING BASED ON Inclusion Reduced Linkage Unigrams
+
+
+
+ALL FIRMS
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=234.20490191533386, pvalue=0.0), 
+t-statistic = 234.20490191533386, 
+p = 0.0, 
+Mean of same family = 0.6641556969479604, 
+SD of same family = 0.21773051281580796, 
+N of same family = 3465 
+Mean of not same family = 0.2153437874410988, 
+SD of not same family = 0.10931467787092425, 
+N of not same family = 211969, 
+Difference in means = 0.44881190950686156.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+Micron Technology
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=204.66950342138165, pvalue=0.0), 
+t-statistic = 204.66950342138165, 
+p = 0.0, 
+Mean of same family = 0.661856802119283, 
+SD of same family = 0.2180308342575105, 
+N of same family = 3028 
+Mean of not same family = 0.2159708085068506, 
+SD of not same family = 0.11335941460269908, 
+N of not same family = 94617, 
+Difference in means = 0.4458859936124324.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+IBM
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=69.66966084913687, pvalue=0.0), 
+t-statistic = 69.66966084913687, 
+p = 0.0, 
+Mean of same family = 0.6793463953623228, 
+SD of same family = 0.2367131191785502, 
+N of same family = 235 
+Mean of not same family = 0.20550958367685526, 
+SD of not same family = 0.10325882134932834, 
+N of not same family = 63142, 
+Difference in means = 0.47383681168546754.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+Samsung
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=49.00319491088876, pvalue=0.0), 
+t-statistic = 49.00319491088876, 
+p = 0.0, 
+Mean of same family = 0.6807303986544387, 
+SD of same family = 0.1846387768039769, 
+N of same family = 135 
+Mean of not same family = 0.22370519925864582, 
+SD of not same family = 0.10778144485407726, 
+N of not same family = 36411, 
+Difference in means = 0.4570251993957929.
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+Toshiba
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=33.94657841471398, pvalue=7.766857019803727e-245), 
+t-statistic = 33.94657841471398, 
+p = 7.766857019803727e-245, 
+Mean of same family = 0.6813744235671492, 
+SD of same family = 0.1951436471625643, 
+N of same family = 67 
+Mean of not same family = 0.22979274952969497, 
+SD of not same family = 0.1082339761969099, 
+N of not same family = 17799, 
+Difference in means = 0.4515816740374542.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+TESTING BASED ON Inclusion Complete Linkage Unigrams
+
+
+
+ALL FIRMS
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=164.01399486349453, pvalue=0.0), 
+t-statistic = 164.01399486349453, 
+p = 0.0, 
+Mean of same family = 0.8125334579563009, 
+SD of same family = 0.17599118615304737, 
+N of same family = 3465 
+Mean of not same family = 0.32860868688176986, 
+SD of not same family = 0.17221576564272972, 
+N of not same family = 211969, 
+Difference in means = 0.4839247710745311.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+Micron Technology
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=148.7377758844552, pvalue=0.0), 
+t-statistic = 148.7377758844552, 
+p = 0.0, 
+Mean of same family = 0.811050764845513, 
+SD of same family = 0.17753671661734147, 
+N of same family = 3028 
+Mean of not same family = 0.32771784949580235, 
+SD of not same family = 0.1759715073846592, 
+N of not same family = 94617, 
+Difference in means = 0.4833329153497106.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+IBM
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=46.846011646635134, pvalue=0.0), 
+t-statistic = 46.846011646635134, 
+p = 0.0, 
+Mean of same family = 0.8054994625602306, 
+SD of same family = 0.19131281410142856, 
+N of same family = 235 
+Mean of not same family = 0.30976949259845404, 
+SD of not same family = 0.16180088447676716, 
+N of not same family = 63142, 
+Difference in means = 0.4957299699617766.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+Samsung
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=33.466996942625265, pvalue=6.646717536786083e-242), 
+t-statistic = 33.466996942625265, 
+p = 6.646717536786083e-242, 
+Mean of same family = 0.8379241362747453, 
+SD of same family = 0.12774913880528496, 
+N of same family = 135 
+Mean of not same family = 0.3439589008753279, 
+SD of not same family = 0.17131550570695858, 
+N of not same family = 36411, 
+Difference in means = 0.4939652353994174.
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+Toshiba
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=22.029044375993152, pvalue=3.9156560032947457e-106), 
+t-statistic = 22.029044375993152, 
+p = 3.9156560032947457e-106, 
+Mean of same family = 0.8530534890690256, 
+SD of same family = 0.11771304026183273, 
+N of same family = 67 
+Mean of not same family = 0.3687747706317433, 
+SD of not same family = 0.1797960457854524, 
+N of not same family = 17799, 
+Difference in means = 0.48427871843728226.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+TESTING BASED ON Inclusion Reduced Linkage Bigrams
+
+
+
+ALL FIRMS
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=234.20515796331833, pvalue=0.0), 
+t-statistic = 234.20515796331833, 
+p = 0.0, 
+Mean of same family = 0.14815313116364592, 
+SD of same family = 0.09519663025912994, 
+N of same family = 3465 
+Mean of not same family = 0.02253615651789318, 
+SD of not same family = 0.02913236228890269, 
+N of not same family = 211969, 
+Difference in means = 0.12561697464575275.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+Micron Technology
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=203.20887294096138, pvalue=0.0), 
+t-statistic = 203.20887294096138, 
+p = 0.0, 
+Mean of same family = 0.14673874565070422, 
+SD of same family = 0.09380751536608194, 
+N of same family = 3028 
+Mean of not same family = 0.022078812574604638, 
+SD of not same family = 0.02929139680248919, 
+N of not same family = 94617, 
+Difference in means = 0.12465993307609957.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+IBM
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=73.3703360204521, pvalue=0.0), 
+t-statistic = 73.3703360204521, 
+p = 0.0, 
+Mean of same family = 0.15141040013638216, 
+SD of same family = 0.10812712166323661, 
+N of same family = 235 
+Mean of not same family = 0.02051658288055542, 
+SD of not same family = 0.026544244234999837, 
+N of not same family = 63142, 
+Difference in means = 0.13089381725582674.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+Samsung
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=52.36255890620969, pvalue=0.0), 
+t-statistic = 52.36255890620969, 
+p = 0.0, 
+Mean of same family = 0.15993937269316683, 
+SD of same family = 0.09627865217757046, 
+N of same family = 135 
+Mean of not same family = 0.024521607169456075, 
+SD of not same family = 0.029474872869328764, 
+N of not same family = 36411, 
+Difference in means = 0.13541776552371076.
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+Toshiba
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=34.39655384257291, pvalue=4.1376594758876655e-251), 
+t-statistic = 34.39655384257291, 
+p = 4.1376594758876655e-251, 
+Mean of same family = 0.17690176576228997, 
+SD of same family = 0.10257258734539479, 
+N of same family = 67 
+Mean of not same family = 0.02807018577891101, 
+SD of not same family = 0.03486132587889739, 
+N of not same family = 17799, 
+Difference in means = 0.14883157998337895.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+TESTING BASED ON Inclusion Complete Linkage Bigrams
+
+
+
+ALL FIRMS
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=231.3612968935714, pvalue=0.0), 
+t-statistic = 231.3612968935714, 
+p = 0.0, 
+Mean of same family = 0.17484631129959496, 
+SD of same family = 0.1103583589522401, 
+N of same family = 3465 
+Mean of not same family = 0.026540306290795523, 
+SD of not same family = 0.034996170280502205, 
+N of not same family = 211969, 
+Difference in means = 0.14830600500879945.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+Micron Technology
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=203.41842958026615, pvalue=0.0), 
+t-statistic = 203.41842958026615, 
+p = 0.0, 
+Mean of same family = 0.17302557275201882, 
+SD of same family = 0.10894304398547239, 
+N of same family = 3028 
+Mean of not same family = 0.02567140999608015, 
+SD of not same family = 0.034773433777269276, 
+N of not same family = 94617, 
+Difference in means = 0.14735416275593868.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+IBM
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=73.0757387121168, pvalue=0.0), 
+t-statistic = 73.0757387121168, 
+p = 0.0, 
+Mean of same family = 0.18165481387970533, 
+SD of same family = 0.12431313330517087, 
+N of same family = 235 
+Mean of not same family = 0.02424400224225665, 
+SD of not same family = 0.0321422338171909, 
+N of not same family = 63142, 
+Difference in means = 0.1574108116374487.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
+Samsung
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=50.55906075981368, pvalue=0.0), 
+t-statistic = 50.55906075981368, 
+p = 0.0, 
+Mean of same family = 0.19002552028454914, 
+SD of same family = 0.11365504958195748, 
+N of same family = 135 
+Mean of not same family = 0.02976431721181501, 
+SD of not same family = 0.03617786224932238, 
+N of not same family = 36411, 
+Difference in means = 0.16026120307273412.
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+Toshiba
+
+T-test of independent means and unequal variances: Ttest_indResult(statistic=32.98429768839867, pvalue=1.1545389785960594e-231), 
+t-statistic = 32.98429768839867, 
+p = 1.1545389785960594e-231, 
+Mean of same family = 0.2026672814901283, 
+SD of same family = 0.11083127651884035, 
+N of same family = 67 
+Mean of not same family = 0.03271009837488368, 
+SD of not same family = 0.041631718957802356, 
+N of not same family = 17799, 
+Difference in means = 0.16995718311524463.
+
+The mean KNOWLEDGE FLOW between patents of the same family is significantly GREATER than the mean KNOWLEDGE FLOW between patents that do not belong to the same family.
+
+
+
