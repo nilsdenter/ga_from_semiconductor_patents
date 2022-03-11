@@ -10,7 +10,7 @@ y_variable = variables[0]
 y_variable_double = y_variable
 years = list(set(list(data[x_variable])))
 
-years = [i for i in range(2000, 2008+1)]
+years = [i for i in range(2000, 2007+1)]
 years_charts = ["'"+str(i)[2:] for i in years]
 
 y_variable = "mean_cumulative_" + y_variable
