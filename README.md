@@ -1,4 +1,4 @@
-# Generative Appropriability in the US Semiconductor Industry
+# Measuring generative appropriability: Experiments with US semiconductor patents
 
 This project contains the data and code used in the paper titled "Measuring generative appropriability: Experiments with US semiconductor patents". 
 
