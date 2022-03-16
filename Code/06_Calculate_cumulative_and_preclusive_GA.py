@@ -126,10 +126,10 @@ for patent in focal_patents:
         mean_cumulative_incl_bigram_red_linkage.append(0)
         mean_cumulative_incl_bigram_compl_linkage.append(0)
     else:
-        mean_cumulative_incl_unigram_red_linkage.append(mean(cumulative_incl_unigram_red_linkage))
-        mean_cumulative_incl_unigram_compl_linkage.append(mean(cumulative_incl_unigram_compl_linkage))
-        mean_cumulative_incl_bigram_red_linkage.append(mean(cumulative_incl_bigram_red_linkage))
-        mean_cumulative_incl_bigram_compl_linkage.append(mean(cumulative_incl_bigram_compl_linkage))   
+        mean_cumulative_incl_unigram_red_linkage.append(mean(cumulative_incl_unigram_red_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_unigram_compl_linkage.append(mean(cumulative_incl_unigram_compl_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_bigram_red_linkage.append(mean(cumulative_incl_bigram_red_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_bigram_compl_linkage.append(mean(cumulative_incl_bigram_compl_linkage)*np.log2(self_cit+1))   
 
     if len(preclusive_incl_unigram_red_linkage) == 0:
         mean_preclusive_incl_unigram_red_linkage.append(promote_prec_unigram_red_linkage)
@@ -138,10 +138,10 @@ for patent in focal_patents:
         mean_preclusive_incl_bigram_compl_linkage.append(promote_prec_bigram_compl_linkage)
         
     else:
-        mean_preclusive_incl_unigram_red_linkage.append(mean(preclusive_incl_unigram_red_linkage))
-        mean_preclusive_incl_unigram_compl_linkage.append(mean(preclusive_incl_unigram_compl_linkage))
-        mean_preclusive_incl_bigram_red_linkage.append(mean(preclusive_incl_bigram_red_linkage))
-        mean_preclusive_incl_bigram_compl_linkage.append(mean(preclusive_incl_bigram_compl_linkage))   
+        mean_preclusive_incl_unigram_red_linkage.append(mean(preclusive_incl_unigram_red_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_unigram_compl_linkage.append(mean(preclusive_incl_unigram_compl_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_bigram_red_linkage.append(mean(preclusive_incl_bigram_red_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_bigram_compl_linkage.append(mean(preclusive_incl_bigram_compl_linkage)/np.log2(nonself_cit+1))
 
 citation_data = copy.deepcopy(data)
 
@@ -202,12 +202,7 @@ for patent in focal_patents:
             cumulative_incl_unigram_compl_linkage.append(row["Inclusion Complete Linkage Unigrams"])
             cumulative_incl_bigram_red_linkage.append(row["Inclusion Reduced Linkage Bigrams"])
             cumulative_incl_bigram_compl_linkage.append(row["Inclusion Complete Linkage Bigrams"])
-            
-            num_unique_unigrams_in_selfciting.append(row["num_unique_unigrams_in_citation"])
-            num_unigrams_in_selfciting.append(row["num_unigrams_in_citation"])
-            num_unique_bigrams_in_selfciting.append(row["num_unique_bigrams_in_citation"])
-            num_bigrams_in_selfciting.append(row["num_bigrams_in_citation"])  
-        
+                    
             self_cit += 1
            
         elif row["Selfcitation"] == 0:
@@ -227,10 +222,10 @@ for patent in focal_patents:
                 preclusive_incl_bigram_compl_linkage.append(1/row["Inclusion Complete Linkage Bigrams"])
             else: preclusive_incl_bigram_compl_linkage.append(promote_prec_bigram_compl_linkage)
             
-            num_unique_unigrams_in_otherciting.append(row["num_unique_unigrams_in_citation"])
-            num_unigrams_in_otherciting.append(row["num_unigrams_in_citation"])
-            num_unique_bigrams_in_otherciting.append(row["num_unique_bigrams_in_citation"])
-            num_bigrams_in_otherciting.append(row["num_bigrams_in_citation"])    
+            #num_unique_unigrams_in_otherciting.append(row["num_unique_unigrams_in_citation"])
+            #num_unigrams_in_otherciting.append(row["num_unigrams_in_citation"])
+            #num_unique_bigrams_in_otherciting.append(row["num_unique_bigrams_in_citation"])
+            #num_bigrams_in_otherciting.append(row["num_bigrams_in_citation"])    
             nonself_cit += 1
     
     if len(cumulative_incl_unigram_red_linkage) == 0:
@@ -239,10 +234,10 @@ for patent in focal_patents:
         mean_cumulative_incl_bigram_red_linkage.append(0)
         mean_cumulative_incl_bigram_compl_linkage.append(0)
     else:
-        mean_cumulative_incl_unigram_red_linkage.append(mean(cumulative_incl_unigram_red_linkage))
-        mean_cumulative_incl_unigram_compl_linkage.append(mean(cumulative_incl_unigram_compl_linkage))
-        mean_cumulative_incl_bigram_red_linkage.append(mean(cumulative_incl_bigram_red_linkage))
-        mean_cumulative_incl_bigram_compl_linkage.append(mean(cumulative_incl_bigram_compl_linkage))   
+        mean_cumulative_incl_unigram_red_linkage.append(mean(cumulative_incl_unigram_red_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_unigram_compl_linkage.append(mean(cumulative_incl_unigram_compl_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_bigram_red_linkage.append(mean(cumulative_incl_bigram_red_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_bigram_compl_linkage.append(mean(cumulative_incl_bigram_compl_linkage)*np.log2(self_cit+1))   
 
     if len(preclusive_incl_unigram_red_linkage) == 0:
         mean_preclusive_incl_unigram_red_linkage.append(promote_prec_unigram_red_linkage)
@@ -251,10 +246,10 @@ for patent in focal_patents:
         mean_preclusive_incl_bigram_compl_linkage.append(promote_prec_bigram_compl_linkage)
         
     else:
-        mean_preclusive_incl_unigram_red_linkage.append(mean(preclusive_incl_unigram_red_linkage))
-        mean_preclusive_incl_unigram_compl_linkage.append(mean(preclusive_incl_unigram_compl_linkage))
-        mean_preclusive_incl_bigram_red_linkage.append(mean(preclusive_incl_bigram_red_linkage))
-        mean_preclusive_incl_bigram_compl_linkage.append(mean(preclusive_incl_bigram_compl_linkage))   
+        mean_preclusive_incl_unigram_red_linkage.append(mean(preclusive_incl_unigram_red_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_unigram_compl_linkage.append(mean(preclusive_incl_unigram_compl_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_bigram_red_linkage.append(mean(preclusive_incl_bigram_red_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_bigram_compl_linkage.append(mean(preclusive_incl_bigram_compl_linkage)/np.log2(nonself_cit+1))
 
 citation_data = copy.deepcopy(data)
 
@@ -315,12 +310,7 @@ for patent in focal_patents:
             cumulative_incl_unigram_compl_linkage.append(row["Inclusion Complete Linkage Unigrams"])
             cumulative_incl_bigram_red_linkage.append(row["Inclusion Reduced Linkage Bigrams"])
             cumulative_incl_bigram_compl_linkage.append(row["Inclusion Complete Linkage Bigrams"])
-            
-            num_unique_unigrams_in_selfciting.append(row["num_unique_unigrams_in_citation"])
-            num_unigrams_in_selfciting.append(row["num_unigrams_in_citation"])
-            num_unique_bigrams_in_selfciting.append(row["num_unique_bigrams_in_citation"])
-            num_bigrams_in_selfciting.append(row["num_bigrams_in_citation"])  
-        
+                    
             self_cit += 1
            
         elif row["Selfcitation"] == 0:
@@ -339,11 +329,7 @@ for patent in focal_patents:
             if row["Inclusion Complete Linkage Bigrams"] !=0:
                 preclusive_incl_bigram_compl_linkage.append(1/row["Inclusion Complete Linkage Bigrams"])
             else: preclusive_incl_bigram_compl_linkage.append(promote_prec_bigram_compl_linkage)
-            
-            num_unique_unigrams_in_otherciting.append(row["num_unique_unigrams_in_citation"])
-            num_unigrams_in_otherciting.append(row["num_unigrams_in_citation"])
-            num_unique_bigrams_in_otherciting.append(row["num_unique_bigrams_in_citation"])
-            num_bigrams_in_otherciting.append(row["num_bigrams_in_citation"])    
+
             nonself_cit += 1
     
     if len(cumulative_incl_unigram_red_linkage) == 0:
@@ -352,10 +338,10 @@ for patent in focal_patents:
         mean_cumulative_incl_bigram_red_linkage.append(0)
         mean_cumulative_incl_bigram_compl_linkage.append(0)
     else:
-        mean_cumulative_incl_unigram_red_linkage.append(mean(cumulative_incl_unigram_red_linkage))
-        mean_cumulative_incl_unigram_compl_linkage.append(mean(cumulative_incl_unigram_compl_linkage))
-        mean_cumulative_incl_bigram_red_linkage.append(mean(cumulative_incl_bigram_red_linkage))
-        mean_cumulative_incl_bigram_compl_linkage.append(mean(cumulative_incl_bigram_compl_linkage))   
+        mean_cumulative_incl_unigram_red_linkage.append(mean(cumulative_incl_unigram_red_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_unigram_compl_linkage.append(mean(cumulative_incl_unigram_compl_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_bigram_red_linkage.append(mean(cumulative_incl_bigram_red_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_bigram_compl_linkage.append(mean(cumulative_incl_bigram_compl_linkage)*np.log2(self_cit+1))   
 
     if len(preclusive_incl_unigram_red_linkage) == 0:
         mean_preclusive_incl_unigram_red_linkage.append(promote_prec_unigram_red_linkage)
@@ -364,10 +350,10 @@ for patent in focal_patents:
         mean_preclusive_incl_bigram_compl_linkage.append(promote_prec_bigram_compl_linkage)
         
     else:
-        mean_preclusive_incl_unigram_red_linkage.append(mean(preclusive_incl_unigram_red_linkage))
-        mean_preclusive_incl_unigram_compl_linkage.append(mean(preclusive_incl_unigram_compl_linkage))
-        mean_preclusive_incl_bigram_red_linkage.append(mean(preclusive_incl_bigram_red_linkage))
-        mean_preclusive_incl_bigram_compl_linkage.append(mean(preclusive_incl_bigram_compl_linkage))   
+        mean_preclusive_incl_unigram_red_linkage.append(mean(preclusive_incl_unigram_red_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_unigram_compl_linkage.append(mean(preclusive_incl_unigram_compl_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_bigram_red_linkage.append(mean(preclusive_incl_bigram_red_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_bigram_compl_linkage.append(mean(preclusive_incl_bigram_compl_linkage)/np.log2(nonself_cit+1)) 
 
 citation_data = copy.deepcopy(data)
 
@@ -428,12 +414,7 @@ for patent in focal_patents:
             cumulative_incl_unigram_compl_linkage.append(row["Inclusion Complete Linkage Unigrams"])
             cumulative_incl_bigram_red_linkage.append(row["Inclusion Reduced Linkage Bigrams"])
             cumulative_incl_bigram_compl_linkage.append(row["Inclusion Complete Linkage Bigrams"])
-            
-            num_unique_unigrams_in_selfciting.append(row["num_unique_unigrams_in_citation"])
-            num_unigrams_in_selfciting.append(row["num_unigrams_in_citation"])
-            num_unique_bigrams_in_selfciting.append(row["num_unique_bigrams_in_citation"])
-            num_bigrams_in_selfciting.append(row["num_bigrams_in_citation"])  
-        
+                   
             self_cit += 1
            
         elif row["Selfcitation"] == 0:
@@ -453,10 +434,6 @@ for patent in focal_patents:
                 preclusive_incl_bigram_compl_linkage.append(1/row["Inclusion Complete Linkage Bigrams"])
             else: preclusive_incl_bigram_compl_linkage.append(promote_prec_bigram_compl_linkage)
             
-            num_unique_unigrams_in_otherciting.append(row["num_unique_unigrams_in_citation"])
-            num_unigrams_in_otherciting.append(row["num_unigrams_in_citation"])
-            num_unique_bigrams_in_otherciting.append(row["num_unique_bigrams_in_citation"])
-            num_bigrams_in_otherciting.append(row["num_bigrams_in_citation"])    
             nonself_cit += 1
     
     if len(cumulative_incl_unigram_red_linkage) == 0:
@@ -465,10 +442,10 @@ for patent in focal_patents:
         mean_cumulative_incl_bigram_red_linkage.append(0)
         mean_cumulative_incl_bigram_compl_linkage.append(0)
     else:
-        mean_cumulative_incl_unigram_red_linkage.append(mean(cumulative_incl_unigram_red_linkage))
-        mean_cumulative_incl_unigram_compl_linkage.append(mean(cumulative_incl_unigram_compl_linkage))
-        mean_cumulative_incl_bigram_red_linkage.append(mean(cumulative_incl_bigram_red_linkage))
-        mean_cumulative_incl_bigram_compl_linkage.append(mean(cumulative_incl_bigram_compl_linkage))   
+        mean_cumulative_incl_unigram_red_linkage.append(mean(cumulative_incl_unigram_red_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_unigram_compl_linkage.append(mean(cumulative_incl_unigram_compl_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_bigram_red_linkage.append(mean(cumulative_incl_bigram_red_linkage)*np.log2(self_cit+1))
+        mean_cumulative_incl_bigram_compl_linkage.append(mean(cumulative_incl_bigram_compl_linkage)*np.log2(self_cit+1))   
 
     if len(preclusive_incl_unigram_red_linkage) == 0:
         mean_preclusive_incl_unigram_red_linkage.append(promote_prec_unigram_red_linkage)
@@ -477,10 +454,10 @@ for patent in focal_patents:
         mean_preclusive_incl_bigram_compl_linkage.append(promote_prec_bigram_compl_linkage)
         
     else:
-        mean_preclusive_incl_unigram_red_linkage.append(mean(preclusive_incl_unigram_red_linkage))
-        mean_preclusive_incl_unigram_compl_linkage.append(mean(preclusive_incl_unigram_compl_linkage))
-        mean_preclusive_incl_bigram_red_linkage.append(mean(preclusive_incl_bigram_red_linkage))
-        mean_preclusive_incl_bigram_compl_linkage.append(mean(preclusive_incl_bigram_compl_linkage))   
+        mean_preclusive_incl_unigram_red_linkage.append(mean(preclusive_incl_unigram_red_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_unigram_compl_linkage.append(mean(preclusive_incl_unigram_compl_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_bigram_red_linkage.append(mean(preclusive_incl_bigram_red_linkage)/np.log2(nonself_cit+1))
+        mean_preclusive_incl_bigram_compl_linkage.append(mean(preclusive_incl_bigram_compl_linkage)/np.log2(nonself_cit+1)) 
 
 df = pd.DataFrame(data = patent_id)  
 
