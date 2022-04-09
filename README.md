@@ -14,10 +14,10 @@ The code "03_Identify_Patent_Family_Membership.py" identifies whether the patent
 
 Then, the code "04_Knowledge_flow_by_patent_family_membership.py" performs statistical t-tests to test whether there is a significant difference in knowledge flow between patent citation pairs that belong to the same patent family and patent citation pairs that does not. The results can be obtained from the Results folder, file "Table 2 Independent sample t-tests of knowledge flow by patent family.txt".
 
-The code "05_Knowledge_flow_by_time_lag.py" performs the second knowledge flow analysis. The code plots the mean and 95% confidence interval knowledge flow by time lag in filing years between the cited and the citing patent. The results can be obtained from the Results folder, file "Figure 3 Knowledge Flow by Time Lag.png".
+The code "05_Knowledge_flow_by_time_lag.py" performs the second knowledge flow analysis. The code plots the mean and 95% confidence interval knowledge flow by time lag in filing years between the cited and the citing patent. The results can be obtained from the Results folder, file "Figure 3 Knowledge Flow by Time Lag.svg".
 
 The code "06_Calculate_cumulative_and_preclusive_GA.py" computes the cumulative and preclusive GA values according to the formulae in the paper for each patent. As result, the code creates a csv file containing all patents and their corresponding cumulative and preclusive GA value for each of the four variants.
 
-Finally, the code "07_GA_in_time.py" plots the different cumulative and preclusive GA values per filing year for each of the four semiconductor firms in a scatter-like plot. The results can be obtained from the Results folder, file "Figure 4 Generative Appropriability by Filing Year.png". 
+Finally, the code "07_GA_in_time.py" plots the different cumulative and preclusive GA values per filing year for each of the four semiconductor firms in a scatter-like plot. The results can be obtained from the Results folder, file "Figure 4 Generative Appropriability by Filing Year.svg". 
 
 Please see the paper for further information.
