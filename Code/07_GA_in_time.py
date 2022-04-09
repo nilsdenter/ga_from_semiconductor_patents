@@ -155,9 +155,8 @@ import seaborn as sns
 mpl.rcParams['font.size'] = 8
 mpl.rcParams["font.family"] = "arial"
 
-#fig, axes = plt.subplots(2, 2, sharex = True, sharey=True, figsize=(6.4, 4))
 cm = 1/2.54
-fig, axes = plt.subplots(2, 2, sharex = True, sharey=True, figsize=(16*cm, 16*cm))
+fig, axes = plt.subplots(2, 2, sharex = True, sharey=True, figsize=(16*cm, 12*cm))
 
 
 axes[0,0].set_title('Micron Technology')
