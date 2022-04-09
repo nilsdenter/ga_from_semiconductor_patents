@@ -151,9 +151,9 @@ PLOTTING: https://stackoverflow.com/questions/14432557/matplotlib-scatter-plot-w
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
-sns.set_palette("colorblind")
+
 mpl.rcParams['font.size'] = 8
-mpl.rcParams["font.family"] = "calibri"
+mpl.rcParams["font.family"] = "arial"
 
 #fig, axes = plt.subplots(2, 2, sharex = True, sharey=True, figsize=(6.4, 4))
 cm = 1/2.54
@@ -200,7 +200,7 @@ plt.locator_params(axis="y", nbins=6)
 mpl.rcParams['font.size'] = 8
 
 dot_size = 5
-colors = ["blue", "red", "orange", "green"]
+colors = ["black", "black", "black", "black"]
 
 axes[0,0].scatter(x=Micron_annual_average_cumulative, y=Micron_annual_average_preclusive, s=dot_size, c=colors[0])
 for i, txt in enumerate(years_charts):
@@ -234,5 +234,5 @@ mpl.rcParams['font.size'] = 12
 plt.tight_layout()
 y_variable = y_variable_double
 plt.savefig("Generative_Appropriability_Matrix_{0}.png".format(y_variable), dpi=1600)
-plt.savefig("Generative_Appropriability_Matrix_{0}.eps".format(y_variable), dpi=1600, format="eps")
+plt.savefig("Generative_Appropriability_Matrix_{0}.svg".format(y_variable), dpi=1600, format="svg")
 plt.plot()
