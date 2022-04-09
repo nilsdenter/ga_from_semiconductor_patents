@@ -30,7 +30,7 @@ import matplotlib as mpl
 import seaborn as sns
 sns.set_palette(['#000000'], n_colors=100)
 
-mpl.rcParams["font.family"] = "calibri"
+mpl.rcParams["font.family"] = "arial"
 cm = 1/2.54
 fig, axes = plt.subplots(figsize=(14*cm, 8*cm))
 
