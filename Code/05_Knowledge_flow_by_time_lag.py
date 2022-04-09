@@ -28,13 +28,13 @@ y_variable = variables[0]
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
-sns.set_palette("colorblind")
+sns.set_palette(['#000000'], n_colors=100)
 
 mpl.rcParams["font.family"] = "calibri"
 cm = 1/2.54
-fig, axes = plt.subplots(figsize=(16*cm, 10*cm))
+fig, axes = plt.subplots(figsize=(14*cm, 8*cm))
 
-sns.lineplot(ax = axes, data=data, x=x_variable, y=y_variable, hue='Assignee_Focal_Patent')
+sns.lineplot(ax = axes, data=data, x=x_variable, y=y_variable, style='Assignee_Focal_Patent')
 
 mpl.rcParams['font.size'] = 12
 #axes.set_title('Knowledge Flow by Time Lag')
@@ -62,7 +62,7 @@ plt.legend(handles_new, labels_new, title=None)
 plt.tight_layout()
 
 plt.savefig("{0}_Knowledge_flow_by_time_lag_by_firm.png".format(y_variable), dpi=1600)
-plt.savefig("{0}_Knowledge_flow_by_time_lag_by_firm.eps".format(y_variable), dpi=1600, format="eps")
+plt.savefig("{0}_Knowledge_flow_by_time_lag_by_firm.svg".format(y_variable), dpi=1600, format="svg")
 plt.plot()
 
 #average 0 years
