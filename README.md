@@ -1,6 +1,7 @@
 # Measuring generative appropriability: Experiments with US semiconductor patents
 
-This project contains the data and code used in the paper titled "Measuring generative appropriability: Experiments with US semiconductor patents". 
+This project contains the data and code used in the paper: Denter, N. M., & Lai, M. Y. (2022). Measuring generative appropriability: Experiments with US semiconductor patents. World Patent Information. doi:10.1016/j.wpi.2022.102130.
+https://www.sciencedirect.com/science/article/pii/S0172219022000369?dgcid=author
 
 To reproduce our results, first, you need to download all files from the data folder and unwrap if wrapped.
 
